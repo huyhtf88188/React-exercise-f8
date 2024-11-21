@@ -66,3 +66,65 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.logo h4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .logo-h:first-child {
+  color: #ff6347;
+  transform: rotate(-5deg);
+  margin-right: 5px;
+}
+
+.logo .logo-h:last-child {
+  color: #1e90ff;
+  transform: rotate(5deg);
+}
+
+img {
+  max-width: 100%;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.product-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 100%;
+}
