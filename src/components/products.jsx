@@ -31,7 +31,7 @@ const ProductsList = () => {
       <div className="product-list">
         <div className="row">
         {datas.map((item) => (
-          <ProductsItem key={item.sku} product={item} /> // Đúng biến 'item'
+          <ProductsItem key={item.sku} product={item} />
         ))}
         </div>
       </div>
