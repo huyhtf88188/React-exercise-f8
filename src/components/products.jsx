@@ -6,15 +6,16 @@ function ProductsItem(props) {
     <div className="product-card col-lg-4 col-md-6">
       <img src={props.product.image} alt={props.product.name} />
       <h2>{props.product.name}</h2>
-      <p>{props.product.short_description}</p>
       <p>
-        <strong>Giá:</strong> {props.product.final_price} VNĐ
+        <strong>Mô Tả: </strong>{props.product.short_description}</p>
+      <p>
+        <strong>Giá:</strong> {props.product.final_price} VNĐ.
       </p>
       <p>
-        <strong>Tồn Kho:</strong> {props.product.stock}
+        <strong>Tồn Kho:</strong> {props.product.stock} Sản Phẩm.
       </p>
       <p>
-        <strong>Chất liệu:</strong> {props.product.materials}
+        <strong>Chất liệu:</strong> {props.product.materials}.
       </p>
       <p>
         <strong>Hướng dẫn:</strong> {props.product.instruction}

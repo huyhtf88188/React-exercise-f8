@@ -19,10 +19,10 @@ function Header() {
 						<a href="">Products</a>
 					</li>
 					<li>
-						<a href="">Services</a>
+						<a href="#footer">Services</a>
 					</li>
 					<li>
-						<a href="">Contact</a>
+						<a href="#footer">Contact</a>
 					</li>
 				</ul>
 			</nav>
