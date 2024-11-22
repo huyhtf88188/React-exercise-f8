@@ -128,3 +128,26 @@ img {
   padding: 1rem;
   height: 100%;
 }
+
+.btn {
+  background-color: green;
+}
+
+.btn-primary {
+  background-color: #1e90ff;
+}
+
+.btn-secondary {
+  background-color: orange;
+}
+
+.btn-warning {
+  background-color: orangered;
+}
+
+.btn-danger {
+  background-color: red;
+}
+.btn-link {
+  background-color: #ccc;
+}
