@@ -1,9 +1,6 @@
-// import { useEffect, useState } from "react";
-import "./App.scss";
-
 import Footer from "./components/footer/Footer";
-import Header from "./components/Header";
-import Shop from "./pages/Shop";
+import Header from "./components/header/Header";
+import Shop from "./components/pages/Shop";
 
 function App() {
   return (
