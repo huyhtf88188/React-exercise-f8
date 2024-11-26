@@ -1,56 +1,63 @@
-import React, { useState } from "react";
-import ProductsList from "./components/products/products";
-import Footer from "./components/footer/footer";
-import Header from "./components/header";
-import "../src/index.css";
-import display from "./../node_modules/colorjs.io/src/display";
-import { datas } from "./data";
+// import { useEffect, useState } from "react";
+import "./App.scss";
 
-// function Button(props){
-//   return <button className={props.variant}>{props.children}</button>
-// }
+import Footer from "./components/footer/Footer";
+import Header from "./components/Header";
+import Shop from "./pages/Shop";
 
-// function Wellcome(props){
+/**
+ * 1. useEffect có dependences là mảng rỗng: callback chỉ gọi 1 lần ngay sau lần render đầu tiên.
+ * 2. useEffect có dependences khác mảng rỗng: callback gọi 1 lần ngay sau lần render đầu tiên & được gọi khi sự phụ thuộc thay đổi.
+ * 3. useEffect không có dependences: callback được gọi 1 lần sau lần render đầu tiên và sau mỗi lần re-render.
+ *
+ */
 
-//   const [count, setCount]= useState(0)
-//   function handleClick(){
-//     // setCount(count +1)
-//     setCount((prev)=> prev + 1)
-//     setCount((prev)=> prev + 1)
-//   }
-//   return(<><h1>Xin chào {props.name}</h1>
-//   <button onClick={handleClick}>Click Me</button>
-//   {count}
-//   </> )
+// function ProductList() {
+//   useEffect(() => {
+//     console.log("trong useEffect");
+//     return () => {
+//       console.log("trong return cua useEffect");
+//       // function dọn dẹp ngay trước khi component ProductList được unmounting
+//     };
+//   }, []);
+//   return <h1>Danh sach san pham</h1>;
 // }
 
 function App() {
-  const [isShow, setShow] = useState(false);
-  const [limit, setLimit] = useState(10);
+  // const [count, setCount] = useState(0);
+  // const [showProducts, setShowProducts] = useState(false);
+
+  // useEffect(() => {
+  //   console.log("trong useEffect");
+  //   return () => {
+  //     console.log("trong return của useEffect");
+  //   };
+  // }, [count, showProducts]);
+
+  // console.log("trong App");
 
   return (
     <>
       <Header />
-      <button
+      {/* <button
         onClick={() => {
-          setShow(!isShow);
+          setCount((prev) => prev + 1);
         }}
       >
-        {isShow ? "Close" : "Open"}
+        Tăng
       </button>
-      {isShow ? <ProductsList limit={limit} /> : ""}
-      {limit < datas.length ? (
-        <button
-          onClick={() => {
-            setLimit(limit + 10);
-          }}
-        >
-          See More
-        </button>
-      ) : (
-        ""
-      )}
+      {count}
 
+      <button
+        onClick={() => {
+          setShowProducts(!showProducts);
+        }}
+      >
+        Toogle Products
+      </button>
+
+      {showProducts && <ProductList />} */}
+      <Shop />
       <Footer />
     </>
   );

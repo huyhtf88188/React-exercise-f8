@@ -1,0 +1,8 @@
+{
+    "product":
+    [
+    {"id": "01", "name": "Hoang Huy", "price": "1000"},
+    {"id": "02", "name": "Hoang duy", "price": "2000"},
+    {"id": "03", "name": "Hoang an", "price": "3000"}
+    ]
+}
