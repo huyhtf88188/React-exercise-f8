@@ -27,9 +27,15 @@ const Shop = () => {
 
   const handleSelectLimit = (e) => {
     const selectedLimit = e.target.value;
-    console.log(selectedLimit);
+
     if (selectedLimit === "all") {
-      setLimit(products.total);
+      fetch("https://dummyjson.com/products")
+        .then((res) => res.json())
+        .then((data) => {
+          setLimit(data.total);
+          setSkip(0);
+          setPage(1);
+        });
     } else {
       setLimit(selectedLimit);
     }
