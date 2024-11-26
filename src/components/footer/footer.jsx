@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer id="footer">
       <p>Copyright by HH</p>
-      <button id={style.abc}>Folow Me</button>
+      <button id={style.abc}>Folow MeE</button>
     </footer>
   );
 };
