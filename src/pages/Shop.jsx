@@ -74,11 +74,7 @@ const Shop = () => {
           </div>
         ))}
       </div>
-      <button
-        className="btn btn-danger"
-        onClick={handlePrev}
-        disabled={page === 1}
-      >
+      <button className="btn btn-danger" onClick={handlePrev}>
         Prev
       </button>
       <button className="btn btn-danger" onClick={handleNext}>
